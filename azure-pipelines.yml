@@ -1,10 +1,21 @@
 
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Free Trial (2d4bdde6-47de-486e-95d3-ca6cd67b359a)'
+    subscriptionId: '2d4bdde6-47de-486e-95d3-ca6cd67b359a'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'storageRG'
+    location: 'Australia East'
+    templateLocation: 'Linked artifact'
+    csmFile: 'vh'
+    deploymentMode: 'Incremental'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
+# Add steps that build, run tests, deploy, and more::
 # https://aka.ms/yaml
 
 trigger:
 - master
+
 
 pool:
   vmImage: 'ubuntu-latest'
