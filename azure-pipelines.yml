@@ -1,4 +1,4 @@
-- task: AzureResourceManagerTemplateDeployment@3
+
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'Free Trial (2d4bdde6-47de-486e-95d3-ca6cd67b359a)'
